@@ -28,8 +28,8 @@ export class Mobile {
     this.price = price;
   }
 
-  public print():void{
-    for(let prop in this){
+  public print(): void {
+    for (let prop in this) {
       switch (prop) {
         case "name":
           console.log(`The characteristics of the mobile ${this.name} are: \n`);
@@ -41,12 +41,17 @@ export class Mobile {
         case "is5G":
         case "cameraNumber":
         case "price":
-          console.log(`${prop}: ${eval('this.' + prop)}`);
-          break; 
+          console.log(`${prop}: ${eval("this." + prop)}`);
+          break;
       }
     }
-    console.log('');
+    console.log("");
   }
+
+
+  /////////////////////////////////////
+  //         GETTER Y SETTER         //
+  /////////////////////////////////////
 
   public getName(): string {
     return this.name;

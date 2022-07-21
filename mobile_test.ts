@@ -1,6 +1,6 @@
 import { Mobile } from "./Mobile";
 
-let nokia3210 = new Mobile(
+let nokia3210:Mobile = new Mobile(
   "Nokia3210",
   "3210",
   "Nokia",
@@ -12,7 +12,7 @@ let nokia3210 = new Mobile(
 );
 
 
-let iphone3g = new Mobile(
+let iphone3g: Mobile = new Mobile(
   "Iphone3g",
   "i3g",
   "Apple",
@@ -23,7 +23,7 @@ let iphone3g = new Mobile(
   200
 );
 
-let galaxy10 = new Mobile(
+let galaxy10: Mobile = new Mobile(
   "Galaxy 10",
   "GT-I900",
   "Samsung",
@@ -32,7 +32,7 @@ let galaxy10 = new Mobile(
   false,
   0,
   250
-  );
+);
   
   console.log(nokia3210);
   console.log(iphone3g);
