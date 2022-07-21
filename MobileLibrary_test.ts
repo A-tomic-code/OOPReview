@@ -54,3 +54,5 @@ console.log(miLibrary.getName());
 console.log(miLibrary.geLocation());
 console.log(miLibrary.getMobiles());
 console.log(miLibrary.getTotalPrice());
+console.log('------------------------------');
+miLibrary.printLibrary();
