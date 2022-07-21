@@ -28,7 +28,7 @@ export class Mobile {
     this.price = price;
   }
 
-  public print(){
+  public print():void{
     for(let prop in this){
       switch (prop) {
         case "name":
@@ -38,13 +38,14 @@ export class Mobile {
         case "trademark":
         case "sdSize":
         case "color":
-        case "is5g":
+        case "is5G":
         case "cameraNumber":
         case "price":
           console.log(`${prop}: ${eval('this.' + prop)}`);
-          break;
+          break; 
       }
     }
+    console.log('');
   }
 
   public getName(): string {

@@ -11,7 +11,6 @@ let nokia3210 = new Mobile(
   50
 );
 
-
 let iphone3g = new Mobile(
   "Iphone3g",
   "i3g",
@@ -32,17 +31,21 @@ let galaxy10 = new Mobile(
   false,
   0,
   250
-  );
-  
-  console.log(nokia3210);
-  console.log(iphone3g);
-  console.log(galaxy10);
-  
-  nokia3210.is5g = true; //ahora falla porque he cambiado los atributos de la clase
-  nokia3210.cameraNumber = 4;  //a privados
+);
 
-   console.log(nokia3210);
-   console.log(iphone3g);
-   console.log(galaxy10);
+console.log(nokia3210);
+console.log(iphone3g);
+console.log(galaxy10);
 
- 
+nokia3210.setIs5G(true);
+nokia3210.setCameraNumber(4);
+
+console.log(nokia3210);
+console.log(iphone3g);
+console.log(galaxy10);
+
+let arr:Mobile[] = [nokia3210, iphone3g, galaxy10];
+
+for(let i = 0; i < arr.length; i++){
+  arr[i].print();
+}
