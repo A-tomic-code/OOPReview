@@ -33,7 +33,9 @@ let galaxy10 = new Mobile(
   250
 );
 
-console.log(nokia3210);
-console.log(iphone3g);
-console.log(galaxy10);
+// console.log(nokia3210);
+// console.log(iphone3g);
+// console.log(galaxy10);
 
+
+galaxy10.toString()
